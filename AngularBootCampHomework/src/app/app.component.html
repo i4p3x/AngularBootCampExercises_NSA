@@ -1,5 +1,62 @@
 
-<p>Hello world!</p>
+
+<p>  
+  <mat-toolbar color="primary">
+    
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>assignment</mat-icon>
+          <a href="#one">1. Directivas de atributo</a>
+        </button>
+        <button mat-menu-item >          
+          <mat-icon>assignment</mat-icon>
+          <a href="#two">2. Directivas estructurales</a>          
+        </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#three">3. Directivas custom</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#four">4. Data binding</a>
+        </button>
+      </mat-menu>
+    <span>{{ title }}</span>
+    <span class="example-spacer"></span>
+    
+  </mat-toolbar>
+</p>
+<!--
+<div class="center" id="one">
+    <app-d-atributo></app-d-atributo> 
+</div>
+    <mat-divider></mat-divider>
+<div class="center" id="two">
+    <app-d-estruc></app-d-estruc> 
+</div>
+    <mat-divider></mat-divider>
+<div class="center" id="three">
+  <app-d-custom></app-d-custom>
+</div>
+    <mat-divider></mat-divider>
+<div class="center" id="four">
+  <app-binding></app-binding>
+</div>
+    <mat-divider></mat-divider>
+<div class="center" id="five">Ej 5
+    <router-outlet name="main"></router-outlet> 
+</div>
+    <mat-divider></mat-divider>
+<div class="center" id="six">Ej 6
+     
+</div>  -->  
+
+
+
+
   
       
   
