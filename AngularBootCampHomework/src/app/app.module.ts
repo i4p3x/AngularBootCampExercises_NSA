@@ -11,10 +11,12 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { DAtributoComponent } from './components/d-atributo/d-atributo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DAtributoComponent
   ],
   imports: [
     BrowserModule,
