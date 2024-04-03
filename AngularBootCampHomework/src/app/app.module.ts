@@ -12,11 +12,13 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { DAtributoComponent } from './components/d-atributo/d-atributo.component';
+import { DEstrucComponent } from './components/d-estruc/d-estruc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DAtributoComponent
+    DAtributoComponent,
+    DEstrucComponent    
   ],
   imports: [
     BrowserModule,
