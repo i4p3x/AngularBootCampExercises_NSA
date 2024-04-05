@@ -18,6 +18,8 @@ import { DEstrucComponent } from './components/d-estruc/d-estruc.component';
 import { DCustomComponent } from './components/d-custom/d-custom.component';
 import { CapitalizeDirective } from './directives/capitalize.directive';
 import { BindingComponent } from './components/binding/binding.component';
+import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.module';
+//import { MyFirstComponentComponent } from './components/my-first-component/my-first-component.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { BindingComponent } from './components/binding/binding.component';
     DEstrucComponent,
     DCustomComponent,
     CapitalizeDirective,
-    BindingComponent    
+    BindingComponent,
+    //MyFirstComponentComponent    
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { BindingComponent } from './components/binding/binding.component';
     MatListModule,
     MatSlideToggleModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    MyFirstModuleModule
   ],
   providers: [
     provideAnimationsAsync()
