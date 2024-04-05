@@ -13,12 +13,16 @@ import {MatListModule} from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { DAtributoComponent } from './components/d-atributo/d-atributo.component';
 import { DEstrucComponent } from './components/d-estruc/d-estruc.component';
+import { DCustomComponent } from './components/d-custom/d-custom.component';
+import { CapitalizeDirective } from './directives/capitalize.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     DAtributoComponent,
-    DEstrucComponent    
+    DEstrucComponent,
+    DCustomComponent,
+    CapitalizeDirective    
   ],
   imports: [
     BrowserModule,
