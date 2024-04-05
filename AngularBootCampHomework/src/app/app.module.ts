@@ -11,10 +11,13 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 import { DAtributoComponent } from './components/d-atributo/d-atributo.component';
 import { DEstrucComponent } from './components/d-estruc/d-estruc.component';
 import { DCustomComponent } from './components/d-custom/d-custom.component';
 import { CapitalizeDirective } from './directives/capitalize.directive';
+import { BindingComponent } from './components/binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { CapitalizeDirective } from './directives/capitalize.directive';
     DAtributoComponent,
     DEstrucComponent,
     DCustomComponent,
-    CapitalizeDirective    
+    CapitalizeDirective,
+    BindingComponent    
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,9 @@ import { CapitalizeDirective } from './directives/capitalize.directive';
     MatDividerModule,
     MatMenuModule,
     MatListModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    FormsModule,
+    MatInputModule
   ],
   providers: [
     provideAnimationsAsync()

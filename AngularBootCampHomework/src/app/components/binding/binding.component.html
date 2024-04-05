@@ -1,0 +1,15 @@
+<h2>Event Binding</h2>
+    <button mat-raised-button color="primary" (click)="onAlert()">Click me!</button>
+<br><br>
+<h2>	One way data binding</h2>
+    <mat-form-field appearance="outline">    
+        <input matInput placeholder="Write something" value={{hworld}}> 
+        
+    </mat-form-field>
+ <br><br>
+<h2>	Two way data binding</h2>
+
+<mat-form-field appearance="outline">  
+    <mat-label>{{hworld1}}</mat-label>
+    <input matInput [(ngModel)]='hworld1'>
+</mat-form-field>
