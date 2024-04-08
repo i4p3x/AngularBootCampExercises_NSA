@@ -19,7 +19,8 @@ import { DCustomComponent } from './components/d-custom/d-custom.component';
 import { CapitalizeDirective } from './directives/capitalize.directive';
 import { BindingComponent } from './components/binding/binding.component';
 import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.module';
-//import { MyFirstComponentComponent } from './components/my-first-component/my-first-component.component';
+import { InjectableModule } from './modules/injectable/injectable.module';
+import { RootInjectableModule } from './modules/root-injectable/root-injectable.module';
 
 @NgModule({
   declarations: [
@@ -28,8 +29,7 @@ import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.m
     DEstrucComponent,
     DCustomComponent,
     CapitalizeDirective,
-    BindingComponent,
-    //MyFirstComponentComponent    
+    BindingComponent,   
   ],
   imports: [
     BrowserModule,
@@ -43,7 +43,9 @@ import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.m
     MatSlideToggleModule,
     FormsModule,
     MatInputModule,
-    MyFirstModuleModule
+    MyFirstModuleModule,
+    InjectableModule,
+    RootInjectableModule
   ],
   providers: [
     provideAnimationsAsync()
