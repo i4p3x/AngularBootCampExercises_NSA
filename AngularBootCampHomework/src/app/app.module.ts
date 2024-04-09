@@ -21,6 +21,8 @@ import { BindingComponent } from './components/binding/binding.component';
 import { MyFirstModuleModule } from './modules/my-first-module/my-first-module.module';
 import { InjectableModule } from './modules/injectable/injectable.module';
 import { RootInjectableModule } from './modules/root-injectable/root-injectable.module';
+import { PipesComponent } from './components/pipes/pipes.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { RootInjectableModule } from './modules/root-injectable/root-injectable.
     DEstrucComponent,
     DCustomComponent,
     CapitalizeDirective,
-    BindingComponent,   
+    BindingComponent,
+    PipesComponent,
+    CapitalizePipe,   
   ],
   imports: [
     BrowserModule,
