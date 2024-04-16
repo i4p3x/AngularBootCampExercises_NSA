@@ -23,13 +23,33 @@
           <mat-icon >assignment</mat-icon>
           <a href="#four">4. Data binding</a>
         </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#five">5. Módulos</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#six">6. Data binding</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#seven">7. Pipes</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#eight">8. Material</a>
+        </button>
+        <button mat-menu-item>
+          <mat-icon >assignment</mat-icon>
+          <a href="#nine">9. Ruteo</a>
+        </button>
       </mat-menu>
     <span>{{ title }}</span>
     <span class="example-spacer"></span>
     
   </mat-toolbar>
 </p>
-<!--
+
 <div class="center" id="one">
     <app-d-atributo></app-d-atributo> 
 </div>
@@ -46,13 +66,27 @@
   <app-binding></app-binding>
 </div>
     <mat-divider></mat-divider>
-<div class="center" id="five">Ej 5
+<div class="center" id="five">
     <router-outlet name="main"></router-outlet> 
 </div>
     <mat-divider></mat-divider>
-<div class="center" id="six">Ej 6
+<div class="center" id="six">
+  <router-outlet name="injectable"></router-outlet> 
+  <router-outlet name="root-injectable"></router-outlet> 
+</div>  
+<mat-divider></mat-divider>
+<div class="center" id="seven">
+  <app-pipes></app-pipes>
+</div> 
+<mat-divider></mat-divider>
+<div class="center" id="eight">Ej 8
      
-</div>  -->  
+</div> 
+<mat-divider></mat-divider>
+<div class="center" id="nine">Ej 9
+     
+</div> 
+<!---->  
 
 
 

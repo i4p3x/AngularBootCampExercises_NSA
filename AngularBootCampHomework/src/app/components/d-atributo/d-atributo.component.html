@@ -1,0 +1,14 @@
+<h2>NgClass</h2>
+    <span [ngClass]="{'redText': active}">
+        Hola
+    </span>
+    <br>
+    <br>
+
+<h2>NgStyle</h2> 
+    <span [ngStyle]="{'color': active ? 'red': ''}">
+        Hola
+    </span>
+    <br><br>
+    <button (click)="cambiarFlag()">Toggle active</button>
+    <p>active: {{active}}</p>
